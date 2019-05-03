@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Miroir"
+    android:id="@+id/main"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="800dp" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/exemple"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="235dp"
+        android:layout_marginLeft="90dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="400dp">
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_weight="1"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottonstyle"
+            android:text="Open Camera"
+            android:drawableLeft="@drawable/ic_camera_enhance_black_24dp"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="255dp"
+
+            />
+        <Button
+            android:id="@+id/btnenregistrer"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/black"
+            android:text="Enregistrer"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/ic_save_black_24dp"
+            android:padding="12dp"
+            android:layout_marginTop="255dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

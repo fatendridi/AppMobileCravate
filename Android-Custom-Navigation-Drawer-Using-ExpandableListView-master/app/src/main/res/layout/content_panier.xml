@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Panier"
+    tools:showIn="@layout/app_bar_panier">
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:backgroundTint="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation"
+        android:layout_marginTop="665dp"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/notification"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:backgroundTint="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/navigation"
+        app:menu="@menu/notification"
+        android:layout_marginTop="665dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

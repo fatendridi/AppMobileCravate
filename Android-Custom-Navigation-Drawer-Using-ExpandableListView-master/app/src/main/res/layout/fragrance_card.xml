@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:adjustViewBounds="true">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/thumbnail"
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:src="@drawable/promo4"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thumbnail"
+                android:paddingLeft="@dimen/fragrance_title_padding"
+                android:paddingRight="@dimen/fragrance_title_padding"
+                android:paddingTop="@dimen/fragrance_title_padding"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/nouv_prix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="255dp"
+                android:text="28.000 Dt"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/thumbnail"/>
+            <TextView
+                android:id="@+id/anci_prix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35.000 Dt"
+                android:textSize="13dp"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/thumbnail"/>
+            <TextView
+                android:id="@+id/ligne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-------"
+                android:textSize="13dp"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/thumbnail"/>
+            <Button
+                android:id="@+id/btn_ajouter"
+                android:layout_width="155dp"
+                android:layout_height="45dp"
+                android:text="Ajouter"
+                android:textAllCaps="false"
+                android:background="@drawable/bottonstyle"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"
+                android:onClick="showPopup"/>
+            <Button
+                android:id="@+id/btn_essayer"
+                android:layout_width="155dp"
+                android:layout_height="45dp"
+                android:text=" Essayer photo"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="220dp"
+                android:textColor="@color/fragranceColor"
+                android:textSize="17dp"
+                android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+android:padding="8dp"
+                />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

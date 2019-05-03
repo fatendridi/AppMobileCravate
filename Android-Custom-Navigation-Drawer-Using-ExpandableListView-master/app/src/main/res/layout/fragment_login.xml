@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.LoginFragment"
+    tools:showIn="@layout/app_bar_connexion">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Je Suis déja un utilisateur"
+
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@color/blaclight"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="65dp"
+        android:hint="Email"
+        android:id="@+id/user_name"
+        android:background="@drawable/imagestyle"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/user_pass"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="125dp"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:background="@drawable/imagestyle"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/login_bn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="Se connecter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="195dp"
+        android:background="@color/blaclight"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Je Suis un nouveau client"
+
+        android:layout_marginTop="295dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@color/blaclight"/>
+
+
+
+
+    <Button
+        android:id="@+id/register_txt"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="S'inscrire"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="345dp"
+        android:background="@color/blaclight"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_marginTop="665dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:menu="@menu/navigation"
+        android:backgroundTint="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        />
+
+
+</RelativeLayout>

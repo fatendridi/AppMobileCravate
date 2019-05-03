@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fragranceImage"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:scaleType="centerInside"
+            android:background="@color/fragranceColor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+           />
+
+
+        <ImageView
+            android:id="@+id/plusdetaille"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plusdetaille"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fragranceImage"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_below="@+id/plusdetaille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" • Réference :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Prix :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" • Quantity :"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Total :"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1020"
+                    android:textSize="18sp"
+
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18sp"
+                    android:id="@+id/price"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/decrement_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:onClick="decrement"
+                        android:textSize="18sp"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/quantity_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="@string/initial_quantity_value"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/increment_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:onClick="increment"
+                        android:textSize="22sp"
+                        android:text="+" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18sp"
+                    android:id="@+id/cost_text_view"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_continer"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:text="Continer mes achats"
+            android:textAllCaps="false"
+            android:background="@drawable/bottonstyle"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/info"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"/>
+        <Button
+            android:id="@+id/cart_button"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:text="Commander"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/info"
+            android:layout_marginLeft="220dp"
+            android:textColor="@color/fragranceColor"
+            android:textSize="17dp"
+            android:onClick="addToCart"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
